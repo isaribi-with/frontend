@@ -21,5 +21,6 @@ html,body,#app {
   margin: 0;
   display: flex;
   overflow: hidden;
+  justify-content: center;
 }
 </style>

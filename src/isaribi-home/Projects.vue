@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .projects {
   width: 100%;
   height: 100%;
@@ -27,20 +27,20 @@ export default {
 
 .event,
 .product {
-  position: absolute;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   text-align: center;
+  position: absolute;
 }
 
 .event {
+  left: 20%;
   background-color: chartreuse;
-  top: 30%;
-  left: 50%;
 }
 
 .product {
+  left: 60%;
   background-color: aquamarine;
 }
 </style>
