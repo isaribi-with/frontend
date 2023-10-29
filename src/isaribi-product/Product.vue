@@ -76,8 +76,7 @@ export default {
   width: fit-content;
   height: fit-content;
   text-align: center;
-  font-size: 6rem;
-  border: 1px solid;
+  font-size: 5rem;
 }
 
 .item-container{
@@ -96,11 +95,10 @@ export default {
   align-items: center;
 }
 .bar-item{
-  width: fit-content;
+  width: 25%;
   height: fit-content;
   text-align: center;
-  font-size: 2rem;
-  padding: 2%;
+  font-size: 1.5rem;
   margin: 0 2% 0 2%;
   border: 1px solid;
 }

@@ -80,14 +80,6 @@ export default {
   display: flex;
   justify-content: center;
 }
-.about {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-}
 .to-summury{
   position: absolute;
   top: 0;
@@ -108,11 +100,20 @@ export default {
   height: 100%;
   display: block;
 }
+.about {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
 .name{
   width: 100%;
   height: 15%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .left{
