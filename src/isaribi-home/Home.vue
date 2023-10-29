@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home,.component-view{
   width: 100%;
   height: 100%;
