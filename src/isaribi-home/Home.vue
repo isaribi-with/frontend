@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <div class="component-view">
-      <Projects></Projects>
+    <div class="logo">
+      <img src="../assets/example.jpg" alt="">
     </div>
+    <Projects></Projects>
   </div>
 </template>
 
@@ -24,7 +25,15 @@ export default {
 </script>
 
 <style scoped>
-.home,.component-view{
+.home{
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  width: 50%;
+  height: auto;
+}
+.logo img{
   width: 100%;
   height: 100%;
 }
