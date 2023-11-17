@@ -23,10 +23,8 @@ export default {
       items:{
         products:[
           {name: "サラダフィッシュ1", img: "example"},
-          {name: "サラダフィッシュ2", img: "example"},
-          {name: "サラダフィッシュ3", img: "example"}
         ],
-        supports:[
+        supporters:[
           {name: "紺野さん1", img: "example"},
           {name: "紺野さん2", img: "example"},
           {name: "紺野さん3", img: "example"},
@@ -39,7 +37,7 @@ export default {
       },
       itemIndex:{
         products:0,
-        supports:0,
+        supporters:0,
         members:0
       },
       about: false,
@@ -88,7 +86,7 @@ export default {
   height: 10%;
   background-color: aqua;
 }
-.products, .members, .supports{
+.products, .members, .supporters{
   width: 90%;
   height: 100%;
   border: 1px solid;

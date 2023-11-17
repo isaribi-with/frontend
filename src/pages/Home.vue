@@ -1,7 +1,12 @@
 <template>
   <div class="home">
     <div class="logo-container">
-      <img src="../assets/logo.jpg" alt="" class="logo" @click="showProjects()">
+      <img 
+        src="../assets/logo.jpg" 
+        alt="" 
+        class="logo"
+        @click="showProjects"
+      >
     </div>
     <div class="projects" v-if="projects">
       <router-link to="/event" class="event">
@@ -15,16 +20,14 @@
 <script>
 export default {
   name: 'MyHome',
-  components:{
-  },
   data() {
     return {
       projects: false,
     };
   },
   methods: {
-    showProjects(){
-      this.projects = true
+    showProjects() {
+      this.projects = !this.projects;
     },
   },
 };
@@ -42,10 +45,11 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.logo{
-  width: 50%;
+
+.logo {
+  width: 80%;
   height: auto;
-  z-index: 3;
+  transition: transform 0.5s ease; 
 }
 
 .projects {
@@ -60,6 +64,7 @@ export default {
   border-radius: 50%;
   text-align: center;
   position: absolute;
+  z-index: 5;
 }
 .event {
   left: 20%;
