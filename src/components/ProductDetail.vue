@@ -1,11 +1,11 @@
 <template>
-    <div class="product">
+    <div class="product-detail">
       <router-link to="/" class="to-root"></router-link>
       <div class="title-container">
         <div class="title">{{ title }}</div>
       </div>
       <div class="item-container">
-        <Item :itemClass="className"></Item>
+        <ProductItem :itemClass="className"></ProductItem>
       </div>
       <div class="bar">
         <div 
@@ -21,19 +21,19 @@
 </template>
 
 <script>
-import Item from "./Item.vue";
+import ProductItem from './ProductItem.vue';
 
 export default {
-  name: 'MyProduct',
+  name: 'MyProductDetail',
   components:{
-    Item
+    ProductItem
   },
   data() {
     return {
       bars:[
         {class: "members", title: "メンバー"},
         {class: "products", title: "商品"},
-        {class: "supports", title: "協賛"}
+        {class: "supporters", title: "サポーター"}
       ],
       className: "products",
       title: "商品",
@@ -49,12 +49,12 @@ export default {
 </script>
 
 <style scoped>
-.product{
+.product-detail{
   width: 100%;
   height: 100%;
   display: block;
 }
-.product :hover{
+.product-detail :hover{
   cursor:default;
 }
 

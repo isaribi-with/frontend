@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../isaribi-home/Home.vue';
-import Event from '../isaribi-event/Event.vue';
-import Product from '../isaribi-product/Product.vue';
+import Home from '../pages/Home.vue';
+import Event from '../pages/Event.vue';
+import Product from '../pages/Product.vue';
 
 const routes = [
   { path: '/', component: Home }, 
